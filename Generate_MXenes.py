@@ -424,7 +424,7 @@ M_combination = args.M_combination   # read this in with arg parse
 save_path = args.save_path
 
 
-bond_directory = '/home/ewvertina/ALIGNNTL/Average_bond_lengths/'  # directory to avg bond .csv's
+bond_directory = 'Average_bond_lengths/'  # directory to avg bond .csv's
 
 avg_M_X_bonds_name = 'dissertation_avg_M_X_bonds'
 avg_M_Tx_bonds_name = 'dissertation_avg_M_Tx_bonds'
@@ -443,7 +443,6 @@ M_combinations_list, X_possibilities_list, Tx_possibilities_list = get_combos(M_
 start = time.perf_counter()
 
 
-'''
 # Generate new MXenes with some randomness
 for selected_M_groups in M_combinations_list:
     for selected_X_group in X_possibilities_list:
@@ -504,127 +503,8 @@ for selected_M_groups in M_combinations_list:
 
                 save_generated_MXene(save_path + '/', save_filename, lattice_a, lattice_c, atom_list, frac_coords)
                 #save_generated_MXene(fake_save_path, save_filename, lattice_a, lattice_c, atom_list, frac_coords)
-'''
 
 
-
-# Generate .cif files for specified MXenes (given their chemical formula)
-#for selected_M_groups in M_combinations_list:
-    #for selected_X_group in X_possibilities_list:
-
-
-
-materials_df = pd.read_csv()
-materials_M_list = materials_df['M'].tolist()
-materials_X_list = materials_df['X'].tolist()
-materials_Tx_list = materials_df['Tx'].tolist()
-materials_Tx_no_parenth_list = materials_df['Tx_no_parenth'].tolist()
-
-for i in range(len(materials_df)):  # M, X, and Tx are given in separate columns of a df (split from the chemical formula)
-    M = materials_M_list[i]
-    X = materials_X_list[i]
-    Tx = materials_Tx_list[i]  # need to rewrite all () maybe?
-    if Tx == 'none':  # configuration_type == 'ABC' or configuration_type == 'ABA':
-        
-
-        
-
-        
-        num_atoms, M_atoms_list, X_atoms_list, Tx_atoms_list, num_Tx = [], [], [], [], []
-        num_atoms, M_atoms_list, X_atoms_list, Tx_atoms_list, num_Tx = new_MXene_atoms(configuration_type, n_value, M_combination, selected_M_groups, selected_X_group, selected_Tx_group)
-
- 
-        
-        # Need to get these variables:
-            # num_atoms, M_atoms_list, X_atoms_list
-        num_atoms = sum_integers_in_string(M) + sum_integers_in_string(X)
-        M_atoms_list = repeat_segments_by_integers(M)
-        X_atoms_list = repeat_segments_by_integers(X)
-
-
-        Tx_atoms_list = []
-        num_Tx = 0
-        atom_list = []
-        countsM = Counter(M_atoms_list)
-        countsX = Counter(X_atoms_list)
-        if not (configuration_type == 'ABC' or configuration_type == 'ABA'):
-            countsTx = Counter(Tx_atoms_list*2)
-            save_filename = ''.join(f'{elem}{countsM[elem]}' for elem in countsM) + ''.join(f'{elem}{countsX[elem]}' for elem in countsX) + ''.join(f'{elem}{countsTx[elem]}' for elem in countsTx) + '.cif'
-        else:
-            save_filename = ''.join(f'{elem}{countsM[elem]}' for elem in countsM) + ''.join(f'{elem}{countsX[elem]}' for elem in countsX) + '.cif'
-
-        for j in range(num_atoms):
-            if j%2 == 0:  # M atom
-                atom_list.append(M_atoms_list.pop(random.randrange(len(M_atoms_list))))
-            else:  # X atom
-                atom_list.append(X_atoms_list)
-        
-        lattice_a, lattice_c, frac_coords = generate_MXene(configuration_type, num_MX_atoms, dissertation_avg_M_X_bonds_df, dissertation_avg_M_Tx_bonds_df, dissertation_avg_Tx_Tx_bonds_df, x_frac_list, y_frac_list, Tx_x_frac_list, Tx_y_frac_list, theta_MX_list, theta_MTx_list, phi_MX_list, phi_MTx_list, atom_list, desired_layer_distance, num_Tx, Tx_atoms_list)
-
-        save_generated_MXene(save_path + '/', save_filename, lattice_a, lattice_c, atom_list, frac_coords)
-        #save_generated_MXene(fake_save_path, save_filename, lattice_a, lattice_c, atom_list, frac_coords)
-    else:
-        #for selected_Tx_group in Tx_possibilities_list:
-
-
-
-        
-
-        num_atoms, M_atoms_list, X_atoms_list, Tx_atoms_list, num_Tx = [], [], [], [], []
-        num_atoms, M_atoms_list, X_atoms_list, Tx_atoms_list, num_Tx = new_MXene_atoms(configuration_type, n_value, M_combination, selected_M_groups, selected_X_group, selected_Tx_group)
-        
-
-        
-
-
-
-
-        # Need to get these variables:
-            # num_atoms, M_atoms_list, X_atoms_list, Tx_atoms_list, num_Tx
-
-        Tx_no_parenth = materials_Tx_no_parenth_list[i]
-        num_atoms = sum_integers_in_string(M) + sum_integers_in_string(X) + sum_integers_in_string(Tx_no_parenth)
-        
-        M_atoms_list = repeat_segments_by_integers(M)
-        X_atoms_list = repeat_segments_by_integers(X)
-        Tx_atoms_list = repeat_segments_by_integers(Tx_no_parenth)
-
-
-        if '(' in Tx and ')' in Tx:
-            num_Tx = 2
-        else:
-            num_Tx = 1
-
-        # the Tx_atoms_list is going to be a problem; 
-            # need to rewrite how to append Tx atoms to material below
-
-
-
-        atom_list = []
-        countsM = Counter(M_atoms_list)
-        countsX = Counter(X_atoms_list)
-        if not (configuration_type == 'ABC' or configuration_type == 'ABA'):
-            countsTx = Counter(Tx_atoms_list*2)
-            save_filename = ''.join(f'{elem}{countsM[elem]}' for elem in countsM) + ''.join(f'{elem}{countsX[elem]}' for elem in countsX) + ''.join(f'{elem}{countsTx[elem]}' for elem in countsTx) + '.cif'
-        else:
-            save_filename = ''.join(f'{elem}{countsM[elem]}' for elem in countsM) + ''.join(f'{elem}{countsX[elem]}' for elem in countsX) + '.cif'
-
-        for j in range(num_atoms):
-            if num_Tx == 2 and (j == 0 or j == num_atoms - 1):  # only need to append entire Tx list once on top, and once on bottom
-                pass
-            elif ((j == 0 and num_Tx == 1) or (j == 1 and num_Tx == 2)) and not (configuration_type == 'ABC' or configuration_type == 'ABA'):  # need to include surface terminations
-                atom_list += Tx_atoms_list  # reverse the order of the Tx list
-            elif ((j == num_atoms - 1 and num_Tx == 1) or (j == num_atoms - 2 and num_Tx == 2)) and not (configuration_type == 'ABC' or configuration_type == 'ABA'):
-                atom_list += Tx_atoms_list[::-1]
-            elif (j-num_Tx)%2 == 0:  # M atom
-                atom_list.append(M_atoms_list.pop(random.randrange(len(M_atoms_list))))
-            else:  # X atom
-                atom_list.append(X_atoms_list)
-        
-        lattice_a, lattice_c, frac_coords = generate_MXene(configuration_type, num_MX_atoms, dissertation_avg_M_X_bonds_df, dissertation_avg_M_Tx_bonds_df, dissertation_avg_Tx_Tx_bonds_df, x_frac_list, y_frac_list, Tx_x_frac_list, Tx_y_frac_list, theta_MX_list, theta_MTx_list, phi_MX_list, phi_MTx_list, atom_list, desired_layer_distance, num_Tx, Tx_atoms_list)
-
-        save_generated_MXene(save_path + '/', save_filename, lattice_a, lattice_c, atom_list, frac_coords)
-        #save_generated_MXene(fake_save_path, save_filename, lattice_a, lattice_c, atom_list, frac_coords)
 
 
 
