@@ -353,7 +353,7 @@ structure_types = ['ABC', 'ABC-hM', 'ABC-hX', 'ABC-m', 'ABC-t', 'ABA', 'ABA-h', 
 
 '''
 #combine two very large .csv files
-path = '/home/ewvertina/ALIGNNTL/Prediction_Results/'
+path = path_to_file
 entire_preds_name = 'entire_predictions_set.csv'
 additionals_preds_name = 'additional_predictions.csv'
 save_name = 'FINAL_PREDS.csv'
@@ -503,10 +503,9 @@ MXenes_df.to_csv(file_path + save_filename, index=False)
 '''
 
 
-#path1 = "/home/ewvertina/ALIGNNTL/Prediction_Results/entire_predictions_set.csv"
-#path2 = "/home/ewvertina/ALIGNNTL/Prediction_Results/additional_predictions.csv"
-#save_path = "/home/ewvertina/ALIGNNTL/Prediction_Results/FINAL_PREDICTIONS.csv"
-
+#path1 = path1
+#path2 = path2
+#save_path = save_path
 #combine_csvs(path1, path2, save_path)
 
 
