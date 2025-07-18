@@ -131,10 +131,10 @@ def pred_xgboost(X, y, saved_model_path, save_path):
 
 
 '''
-path = '/home/ewvertina/ALIGNNTL/Experiment_Results/'
+path = file_path
 
 target_prop = 'Binding_Energy'
-best_model = '2025-04-01'
+best_model = best_model_name
 seed_num = '3'
 baseline_model = "NeuralNetwork"   # ["LinearRegression", "RandomForest", "XGBoost", "NeuralNetwork"]
 data_set_filename = "xenonpy_Binding_Energy_final_holdout_set.csv"
@@ -151,13 +151,13 @@ seed_num = args.seed_num
 baseline_model = args.baseline_model
 data_set_filename = args.data_set_filename
 saved_model_filename = args.saved_model_filename
-save_path = path + best_model + '/C2DB_' + target_prop + '/' + baseline_model + '_final_holdout_preds.csv'
-saved_model_path = path + best_model + '/C2DB_' + target_prop + '/' + seed_num + '/' + saved_model_filename
+save_path = save_path
+saved_model_path = saved_model_path
 
 material_filename = 'MXene_filename'
 target_prop_column = 'Target'
 
-final_holdout_set = pd.read_csv(path + best_model + '/C2DB_' + target_prop + '/' + data_set_filename)
+final_holdout_set = pd.read_csv(save_path + data_set_filename)
 
 X = final_holdout_set.loc[:, ~final_holdout_set.columns.isin([material_filename, target_prop_column])]
 y = final_holdout_set[target_prop_column].to_list()
