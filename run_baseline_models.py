@@ -283,7 +283,7 @@ if target_prop in props_new_names_list:
 
 
 print('target_property: ', target_prop)
-train_ids, val_ids, test_ids = get_ids(path + best_model + '/' + 'C2DB_' + target_prop + '/' + seed_num + '/' + ids_filename, baseline_model)
+train_ids, val_ids, test_ids = get_ids(path_to_ids + ids_filename, baseline_model)
 
 
 train_df = dataset_df[dataset_df['MXene_filename'].isin(train_ids)]
@@ -316,11 +316,9 @@ y_test = y_test.drop('MXene_filename', axis=1)
 
 
 
-save_model = False
-save_path = ''
-if seed_num == '6' or (seed_num == '5' and target_prop == 'Band_Gap' and best_model == '2025-05-02' and baseline_model == 'LinearRegression'):
-    save_model = True
-    save_path = path + best_model + '/' + 'C2DB_' + target_prop + '/' + seed_num + '/' + baseline_model
+save_model = True
+save_path = save_path #specify save path
+
 
 
 if baseline_model == "XGBoost":
@@ -347,9 +345,9 @@ preds_dict = {'MXene_filename':test_names, 'y_true':y_test['Target'].to_list(), 
 preds_df = pd.DataFrame(preds_dict)
 if target_prop in ['Magnetic', 'Dynamically_stable']:
     preds_df['y_pred'] = (preds_df['y_pred'] >= 0.5).astype(int)
-preds_df.to_csv(path + best_model + '/' + 'C2DB_' + target_prop + '/' + seed_num + '/' + baseline_model + '_preds.csv', index=False)
+preds_df.to_csv(save_predictions_path + '/' + baseline_model + '.csv')
 
-save_results_to_csv(path + best_model + '/' + 'C2DB_' + target_prop + '/' + seed_num + '/' +  baseline_model + '_results.csv', evaluation_results)
+save_results_to_csv(save_results_path/results.csv, evaluation_results)
 
 print('Evaluation Results: ', evaluation_results)
 
