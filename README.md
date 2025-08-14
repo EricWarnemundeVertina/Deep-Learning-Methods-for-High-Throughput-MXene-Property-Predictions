@@ -35,6 +35,7 @@ The following are violin plots for each of the 9 target properties that we predi
 
 
 List of works:
+
 PhD Dissertation: (link to dissertation coming soon!)
 
 1. Eric Warnemunde Vertina, Emily Sutherland, Sajal Chakroborty, N. Aaron Deskins, and Oren Mangoubi. Machine-Learning-Enabled High-Throughput MXene Property Prediction. IEEE NAP 2025. (Accepted for publication).
