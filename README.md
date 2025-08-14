@@ -5,7 +5,7 @@ Read Me
 ![Alt text]( Figures/periodic_table_Tx.png)
 
 
-![Alt text]( Figures/flowchart.png)
+![Alt text]( Figures/flowchart_smaller.png)
 ![Alt text]( Figures/all_MXenes_preds/all_preds_Band_Gap_violin_plots_by_n.png)
 ![Alt text]( Figures/all_MXenes_preds/all_preds_Termination_Binding_Energy_violin_plots_by_n.png)
 ![Alt text]( Figures/all_MXenes_preds/flowchart.png)
