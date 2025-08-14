@@ -33,3 +33,16 @@ The following are violin plots for each of the 9 target properties that we predi
 
 ![Alt text]( Figures/all_MXenes_preds/all_preds_Work_Function_violin_plots_by_n.png)
 
+
+List of works:
+PhD Dissertation: (link to dissertation coming soon!)
+
+1. Eric Warnemunde Vertina, Emily Sutherland, Sajal Chakroborty, N. Aaron Deskins, and Oren Mangoubi. Machine-Learning-Enabled High-Throughput MXene Property Prediction. IEEE NAP 2025. (Accepted for publication).
+
+2. Eric Warnemunde Vertina, Sajal Chakroborty, Emily Sutherland, N. Aaron Deskins, and Oren Mangoubi. MXene Material Property Prediction via Transfer Learning
+with Graph Neural Networks. IEEE ICAD 2025. 
+
+3. Eric Warnemunde Vertina, Emily Sutherland, N. Aaron Deskins, and Oren Mangoubi. “MXene Property Prediction via Graph Contrastive Learning.” IEEE NAP 2024. https://ieeexplore.ieee.org/abstract/document/10739742
+
+4. Eric Warnemunde Vertina, Emily Sutherland, N. Aaron Deskins, and Oren Mangoubi. “Predicting MXene Properties via Machine Learning.” In Proceedings of the 2022 International Conference on Machine Learning and Applications (ICMLA). https://ieeexplore.ieee.org/abstract/document/10069589
+
