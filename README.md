@@ -15,7 +15,7 @@ Our workflow
 ![Alt text]( Figures/flowchart_smaller.png)
 
 The following are violin plots for each of the 9 target properties that we predicted across all 13 million+ unique MXenes that we generated.
-![Alt text]( Figures/all_MXenes_preds/violin_all_props_all_n_smaller.png)
+![Alt text]( Figures/violin_all_props_all_n_smaller.png)
 
 
 PhD Dissertation: (link to dissertation coming soon!)
