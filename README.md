@@ -43,7 +43,7 @@ Papers:
 1. Eric Warnemunde Vertina, Emily Sutherland, Sajal Chakroborty, N. Aaron Deskins, and Oren Mangoubi. Machine-Learning-Enabled High-Throughput MXene Property Prediction. IEEE NAP 2025. (Accepted for publication).
 
 2. Eric Warnemunde Vertina, Sajal Chakroborty, Emily Sutherland, N. Aaron Deskins, and Oren Mangoubi. MXene Material Property Prediction via Transfer Learning
-with Graph Neural Networks. IEEE ICAD 2025. 
+with Graph Neural Networks. IEEE ICAD 2025. https://ieeexplore.ieee.org/document/11114063
 
 3. Eric Warnemunde Vertina, Emily Sutherland, N. Aaron Deskins, and Oren Mangoubi. “MXene Property Prediction via Graph Contrastive Learning.” IEEE NAP 2024. https://ieeexplore.ieee.org/abstract/document/10739742
 
