@@ -5,9 +5,10 @@ Why do we need ML/DL methods? MXenes have possibly largest 2D chemical space [1]
 Our contributions:
 * A pipeline to perform high-throughput MXene property predictions with greater accuracy and computationally cheaper inputs than current ML methods
 * Takes ~1 second to calculate a target property for one MXene
-	- ~50,000x faster than DFT
+	- **~50,000x faster than DFT**
 * We predict MXene target properties for 13 million unique MXenes.
-  	- To our knowledge, this is the largest publicly-available dataset of MXenes properties to date.
+  	- **To our knowledge, this is the largest publicly-available dataset of MXenes properties to date.**
+
 The MXenes with the most extreme predictions (largest 1,000 and smallest 1,000) across our 13 million MXenes for each of the 9 target properties predicted can be found in the file: extrema_results.csv
 
 
