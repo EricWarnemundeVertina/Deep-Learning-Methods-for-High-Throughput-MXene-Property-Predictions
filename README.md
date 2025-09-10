@@ -11,6 +11,10 @@ MXene X elements we consider
 MXene Tx (surface terminations) we consider
 ![Alt text]( Figures/periodic_table_Tx.png)
 
+
+MXene structure types we consider
+![Alt text]( Figures/MXene_structure_types.png)
+
 Our workflow
 ![Alt text]( Figures/flowchart_smaller.png)
 
