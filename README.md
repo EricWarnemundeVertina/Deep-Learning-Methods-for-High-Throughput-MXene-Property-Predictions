@@ -1,5 +1,23 @@
 # Read Me
 
+Why do we need ML/DL methods? MXenes have possibly largest 2D chemical space [1]. MXene synthesis remains costly and time-consuming [2]. Density Functional Theory (DFT): accurate but too slow for high-throughput predictions [3]. ML/DL models are great for making very large numbers of predictions quickly.
+
+Our contributions:
+* A pipeline to perform high-throughput MXene property predictions with greater accuracy and computationally cheaper inputs than current ML methods
+* Takes ~1 second to calculate a target property for one MXene
+	- ~50,000x faster than DFT
+* We predict MXene target properties for 13 million unique MXenes.
+  	- To our knowledge, this is the largest publicly-available dataset of MXenes properties to date.
+The MXenes with the most extreme predictions (largest 1,000 and smallest 1,000) across our 13 million MXenes for each of the 9 target properties predicted can be found in the file: extrema_results.csv
+
+
+
+[1] J. Park et al. Active learning framework for expediting the search of thermodynamically stable MXenes in the extensive chemical space. ACS Nano, 18(43):29678–29688, 2024. PMID: 39401454.
+[2] B. Anasori and Y. Gogotsi. 2D Metal Carbides and Nitrides (MXenes) Structure, Properties and Applications. Springer, 06 2019.
+[3] H. Bing, O. A. von Lillenfeld, and D. Bakowies. personal communication. 2017.
+
+
+
 
 # Desired MXene target properties
 
