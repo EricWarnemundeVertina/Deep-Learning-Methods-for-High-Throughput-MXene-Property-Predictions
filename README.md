@@ -3,6 +3,27 @@
 
 # Desired MXene target properties
 
+|Property Name|Property Name (continued)|
+|----------|----------|
+|Band Gap|Magnetic (T/F)|
+|Carrier Density|Metallic (T/F)|
+|Carrier Effective Mass|Optical Absorption Coefficient|
+|Carrier Lifetime|Permeability|
+|Carrier Mobility|Permittivity|
+|Charge Recombination|Poisson’s Ratio|
+|d-Band Center|Reflectivity|
+|Density of States at Fermi Level|Resistivity|
+|Dynamically Stable|Seebeck Coefficient |
+|Elastic Moduli (Bulk, Shear, Young’s)|Sensitivity to Disorder|
+|Elastic Coefficients, c11 and c12|(Termination) Binding Energy|
+|Energy above Convex Hull|Thermal Conductivity|
+|Electrical Conductivity|THz Range (Transmission)|
+|Heat of Formation|Transmittance|
+|Hole Effective Mass|Work Function|
+|Lattice Constant||
+
+
+
 # MXene elements, structure types considered
 MXene M elements we consider
 ![Alt text]( Figures/periodic_table_M.png)
