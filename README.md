@@ -13,9 +13,9 @@ The MXenes with the most extreme predictions (largest 1,000 and smallest 1,000) 
 
 
 
-[1] J. Park et al. Active learning framework for expediting the search of thermodynamically stable MXenes in the extensive chemical space. ACS Nano, 18(43):29678–29688, 2024. PMID: 39401454.
-[2] B. Anasori and Y. Gogotsi. 2D Metal Carbides and Nitrides (MXenes) Structure, Properties and Applications. Springer, 06 2019.
-[3] H. Bing, O. A. von Lillenfeld, and D. Bakowies. personal communication. 2017.
+* [1] J. Park et al. Active learning framework for expediting the search of thermodynamically stable MXenes in the extensive chemical space. ACS Nano, 18(43):29678–29688, 2024. PMID: 39401454.
+* [2] B. Anasori and Y. Gogotsi. 2D Metal Carbides and Nitrides (MXenes) Structure, Properties and Applications. Springer, 06 2019.
+* [3] H. Bing, O. A. von Lillenfeld, and D. Bakowies. personal communication. 2017.
 
 
 
