@@ -51,6 +51,11 @@ The following are violin plots for each of the 9 target properties that we predi
 
 # Using this code
 
+This code is based on ALIGNN and ALIGNNTL models (Atomistic Line Graph Neural Network and Atomistic Line Graph Neural Network based Transfer Learning). See this link for the ALIGNNTL GitHub repository https://github.com/NU-CUCIS/ALIGNNTL.git   , and see these links for the ALIGNNTL and ALIGNN papers, respectively: 
+https://www.nature.com/articles/s41524-023-01185-3    and     https://www.nature.com/articles/s41524-021-00650-1
+
+Vishu Gupta et al. Structure-aware graph neural network based deep transfer learning framework for enhanced predictive analytics on diverse materials datasets. npj Computational Materials, 10(1):1, 2024.
+Kamal Choudhary and Brian DeCost. Atomistic line graph neural network for improved materials property predictions. npj Computational Materials, 7(1), November 2021.
 
 
 Create conda environment to run this code:
