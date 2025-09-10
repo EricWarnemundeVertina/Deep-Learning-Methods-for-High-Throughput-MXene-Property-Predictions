@@ -1,13 +1,9 @@
-Read Me
+# Read Me
 
 
+# Desired MXene target properties
 
-
-
-
-
-Desired MXene target properties
-
+# MXene elements, structure types considered
 MXene M elements we consider
 ![Alt text]( Figures/periodic_table_M.png)
 
@@ -21,19 +17,18 @@ MXene Tx (surface terminations) we consider
 MXene structure types we consider:
 ![Alt text]( Figures/MXene_structure_types.png)
 
-Our workflow
+# Our workflow
 ![Alt text]( Figures/flowchart_smaller.png)
 
+# Prediction results for 13 million MXenes
 The following are violin plots for each of the 9 target properties that we predicted across all 13 million+ unique MXenes that we generated.
 ![Alt text]( Figures/violin_all_props_all_n_smaller.png)
 
 
 
-To Use this Code:
 
-# MXene-Material-Property-Prediction-via-Transfer-Learning-with-Graph-Neural-Networks
-GitHub repository corresponding to the paper: MXene Material Property Prediction via Transfer Learning with Graph Neural Networks
 
+# Using this code
 
 
 
@@ -106,8 +101,6 @@ python -m pip install -e .
 Ran this in ALIGNNTL/FineTuning:
 python -m pip install -e .
 	Note: I copied the original setup.py file from .. into FineTuning
-
-
 
 
 
@@ -205,7 +198,7 @@ all_models = {
 
 
 
-
+# My Works
 
 PhD Dissertation: (link to dissertation coming soon!)
 
