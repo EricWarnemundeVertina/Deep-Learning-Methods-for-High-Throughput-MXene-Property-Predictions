@@ -12,7 +12,7 @@ MXene Tx (surface terminations) we consider
 ![Alt text]( Figures/periodic_table_Tx.png)
 
 
-MXene structure types we consider
+MXene structure types we consider:
 ![Alt text]( Figures/MXene_structure_types.png)
 
 Our workflow
