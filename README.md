@@ -58,7 +58,9 @@ MXene structure types we consider:
 ![Alt text]( Figures/MXene_structure_types.png)
 
 # Our workflow
+<p align="center">
 ![Alt text]( Figures/flowchart_smaller.png)
+</p>
 
 Our training data comes from the Computational 2D Materials Database [4,5] (found here: https://2dhub.org/c2db/c2db.html )  and from [6] (found here: https://github.com/Deskins-group/Structure-Files/tree/master/MXene-structure-properties )
 
