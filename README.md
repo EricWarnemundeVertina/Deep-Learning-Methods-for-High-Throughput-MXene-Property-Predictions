@@ -60,6 +60,12 @@ MXene structure types we consider:
 # Our workflow
 ![Alt text]( Figures/flowchart_smaller.png)
 
+Our training data comes from the Computational 2D Materials Database [4,5] (found here: https://2dhub.org/c2db/c2db.html )  and from [6] (found here: https://github.com/Deskins-group/Structure-Files/tree/master/MXene-structure-properties )
+
+* [4] S. Haastrup et al. The Computational 2D Materials Database: high-throughput modeling and discovery of atomically thin crystals. 2D Materials, 5(4), 09 2018. https://2dhub.org/c2db/c2db.html
+* [5] M. N. Gjerding et al. Recent progress of the Computational 2D Materials Database (C2DB). 2D Materials, 8(4), 09 2021. https://2dhub.org/c2db/c2db.html
+* [6] Emily Sutherland, Benjamin Traverso, and N. Aaron Deskins. "Impact of composition on the structural, electronic, and mechanical properties of M3C2T2 MXenes. Mater. Adv. 2025. DOI: 10.1039/D5MA00874C. RSC. https://github.com/Deskins-group/Structure-Files/tree/master/MXene-structure-properties
+
 # Prediction results for 13 million MXenes
 The following are violin plots for each of the 9 target properties that we predicted across all 13 million+ unique MXenes that we generated.
 ![Alt text]( Figures/violin_all_props_all_n_smaller.png)
