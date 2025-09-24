@@ -255,7 +255,7 @@ all_models = {
 
 # My Works
 
-PhD Dissertation: (link to dissertation coming soon!)
+PhD Dissertation: https://digital.wpi.edu/pdfviewer/jm214t64b
 
 Papers:
 
