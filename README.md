@@ -268,3 +268,6 @@ with Graph Neural Networks. IEEE ICAD 2025. https://ieeexplore.ieee.org/document
 
 4. Eric Warnemunde Vertina, Emily Sutherland, N. Aaron Deskins, and Oren Mangoubi. “Predicting MXene Properties via Machine Learning.” In Proceedings of the 2022 International Conference on Machine Learning and Applications (ICMLA). https://ieeexplore.ieee.org/abstract/document/10069589
 
+
+# More about me
+https://www.linkedin.com/in/eric-vertina-154740ba/
