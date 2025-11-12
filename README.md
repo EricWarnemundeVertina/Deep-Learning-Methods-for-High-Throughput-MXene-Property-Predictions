@@ -259,7 +259,7 @@ PhD Dissertation: https://digital.wpi.edu/pdfviewer/jm214t64b
 
 Papers:
 
-1. Eric Warnemunde Vertina, Emily Sutherland, Sajal Chakroborty, N. Aaron Deskins, and Oren Mangoubi. Machine-Learning-Enabled High-Throughput MXene Property Prediction. IEEE NAP 2025. (Accepted for publication).
+1. Eric Warnemunde Vertina, Emily Sutherland, Sajal Chakroborty, N. Aaron Deskins, and Oren Mangoubi. Machine-Learning-Enabled High-Throughput MXene Property Prediction. IEEE NAP 2025. https://ieeexplore.ieee.org/document/11114063
 
 2. Eric Warnemunde Vertina, Sajal Chakroborty, Emily Sutherland, N. Aaron Deskins, and Oren Mangoubi. MXene Material Property Prediction via Transfer Learning
 with Graph Neural Networks. IEEE ICAD 2025. https://ieeexplore.ieee.org/document/11114063
