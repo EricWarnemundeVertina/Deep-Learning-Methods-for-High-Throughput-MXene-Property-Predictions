@@ -270,4 +270,4 @@ with Graph Neural Networks. IEEE ICAD 2025. https://ieeexplore.ieee.org/document
 
 
 # More about me
-LinkedIn Page: https://www.linkedin.com/in/eric-vertina-154740ba/
+LinkedIn Page: https://www.linkedin.com/in/eric-warnemunde-vertina-154740ba/
