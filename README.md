@@ -11,7 +11,7 @@ Our contributions:
 
 The MXenes with the most extreme predictions (largest 1,000 and smallest 1,000) across our 13 million MXenes for each of the 9 target properties predicted can be found in the file: extrema_results.csv
 
-A .csv file with all prediction results can be downloaded by clicking FINAL_PREDS.csv (however, this file is 1.8 GB and will take a long time to download). The entire set of prediction structure files can be found within the Prediction_Structures folder (though there are many .gz files that will need to be unpacked, corresponding to the different MXene structure types/termination locations and number of M atoms). If you have any questions, please email me at  eric   timothy     warnemunde [at] gmail  .com           (put it all together).
+A .csv file with all prediction results can be downloaded by clicking FINAL_PREDS.csv (however, this file is 1.8 GB and will take a long time to download). The entire set of prediction structure files can be found within the Prediction_Structures folder (though there are many .gz files that will need to be unpacked, corresponding to the different MXene structure types/termination locations and number of X atoms (for example, the subfolder n3 corresponds to MXenes with 3 X atoms)). If you have any questions, please email me at  eric   timothy     warnemunde [at] gmail  .com           (put it all together).
 
 * [1] J. Park et al. Active learning framework for expediting the search of thermodynamically stable MXenes in the extensive chemical space. ACS Nano, 18(43):29678–29688, 2024. PMID: 39401454.
 * [2] B. Anasori and Y. Gogotsi. 2D Metal Carbides and Nitrides (MXenes) Structure, Properties and Applications. Springer, 06 2019.
